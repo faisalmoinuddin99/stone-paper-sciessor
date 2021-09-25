@@ -1,0 +1,68 @@
+<div class="round-container">
+  <div class="container w-50 mt-5 text-center">
+    <div class="text-center display-3 m-3 text-danger">
+      Round {{ roundCounter }}
+    </div>
+  </div>
+</div>
+
+<div class="bottom-container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="sub-col">
+          <h4 class="text-uppercase text-danger">Win</h4>
+        </div>
+        <div class="sub-col">
+          <h5 class="uppercase text-dark">{{ humanScore }}</h5>
+        </div>
+
+        <div class="user-btn">
+          <button
+            (click)="pickStone()"
+            type="button"
+            class="btn btn-danger rounded-circle"
+          >
+            Stone
+          </button>
+          <button
+            (click)="pickPaper()"
+            type="button"
+            class="btn btn-danger rounded-circle"
+          >
+            Paper
+          </button>
+          <button
+            (click)="pickSciessor()"
+            type="button"
+            class="btn btn-danger rounded-circle"
+          >
+            Scissor
+          </button>
+        </div>
+        <div>
+          <app-icon [iconName]="item"></app-icon>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sub-col">
+          <h4 class="text-uppercase text-muted">Ties</h4>
+        </div>
+        <div class="sub-col">
+          <h5 class="uppercase text-dark">{{ tieScore }}</h5>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sub-col">
+          <h4 class="text-uppercase text-danger">Win</h4>
+        </div>
+        <div class="sub-col">
+          <h5 class="uppercase text-dark">{{ computerScore }}</h5>
+        </div>
+        <div (click)="computerLogic()">
+          <app-computer-icon [iconName]="computerItem"></app-computer-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

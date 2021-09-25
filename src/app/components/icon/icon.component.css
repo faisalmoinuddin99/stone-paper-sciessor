@@ -1,0 +1,15 @@
+.user-col {
+  margin-top: 30px;
+  height: 400px;
+}
+
+.computer-col {
+  margin-top: 30px;
+  height: 400px;
+}
+
+.start {
+  height: 396px;
+  width: 421px;
+  /* transform: translateX(360px) rotate(90deg); */
+}

@@ -1,0 +1,27 @@
+.round-container {
+  margin: 10px;
+  height: 150px;
+}
+
+.bottom-container {
+  margin: 10px;
+  height: 600px;
+}
+.sub-col {
+  display: flex;
+  justify-content: center;
+}
+.user-btn {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+}
+.user-col {
+  margin-top: 30px;
+  height: 400px;
+}
+
+.computer-col {
+  margin-top: 30px;
+  height: 400px;
+}

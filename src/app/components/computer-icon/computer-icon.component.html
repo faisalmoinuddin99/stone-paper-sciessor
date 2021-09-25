@@ -1,0 +1,15 @@
+<div [ngSwitch]="iconName" class="user-col">
+  <div *ngSwitchCase="'empty'">
+    <img class="start" src="{{ empty }}" alt="empty" />
+  </div>
+  <div *ngSwitchCase="'scissor'">
+    <img class="start" src="{{ scissor }}" alt="scissor" />
+  </div>
+  <div *ngSwitchCase="'stone'">
+    <img class="start" src="{{ stone }}" alt="stone" />
+  </div>
+  <div *ngSwitchCase="'paper'">
+    <img class="start" src="{{ paper }}" alt="paper" />
+  </div>
+  <div *ngSwitchDefault>Something is not right!!</div>
+</div>
